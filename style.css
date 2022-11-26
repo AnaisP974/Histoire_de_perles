@@ -44,6 +44,7 @@ padding-left: 20px;
 
 .nav_menu {
     width: 100%;
+
 }
 
 .nav_connexion {
@@ -70,6 +71,7 @@ a:hover {
 li {
     display: inline;
     font-size: 0.7rem;
+    
 }
 
 .nav_connexion_img {
@@ -98,6 +100,14 @@ main {
 .sous-categorie {
     width: 15%;
     text-align: center;
+}
+.sous-categorie a{
+    color: #13093F;
+    text-decoration: none;
+}
+
+.sous-categorie a:hover{
+    color: #fff;
 }
 
 .sous-categorie:hover {
@@ -144,4 +154,18 @@ main {
    .sous-categorie_img{
     width: 90px;
   }
+}
+
+/* TUTOS */
+.tuto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.fond{
+    background-color: rgb(199, 197, 197);
+    margin: 20px;
+    padding: 15px;
+    border-radius: 5% 5% 5% 5%;
+    width: 30%;
 }
