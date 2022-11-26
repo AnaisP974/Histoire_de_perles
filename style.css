@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+* {
+    font-family: 'Libre Baskerville', serif;
+}
+
+/********************   HEADER    *********************************/
+
+.banniere {
+    background-image: url(./images/banniere_img.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+    height: 600px;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive !important;
+    color: #fff;
+    text-decoration: none;
+    size: 2em;
+    text-align: center;
+}
+
+.nav {
+    background-color: #13093F;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav_logo_img {
+    width: 150px;
+}
+
+
+.nav_search {
+    width: 80%;
+padding-left: 20px;
+}
+
+.nav_menu {
+    width: 100%;
+}
+
+.nav_connexion {
+    width: 30%;
+}
+
+ul {
+    list-style-type: none;
+    background-attachment: fixed;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
+a:hover {
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+li {
+    display: inline;
+    font-size: 0.7rem;
+}
+
+.nav_connexion_img {
+    display: block;
+    align-self: flex-end;
+    width: 80px;
+}
+
+/* BANNIERE */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* THEMES */
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sous-categorie {
+    width: 15%;
+    text-align: center;
+}
+
+.sous-categorie:hover {
+    width: 25%;
+    background-color: #362a6b;
+    color: #fff;
+    padding-top: 20px;
+    size: 2rem;
+}
+
+.pied {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #13093F;
+    color: #fff;
+    height: 70px;
+
+}
+@media  (max-width : 992px) {
+    .nav_search{
+        display: none;
+    }
+   .nav_menu{
+    width : 150%;
+   }
+   .banniere{
+    width: 100%;
+    background-attachment: inherit;
+   }
+   .sous-categorie_img{
+    width: 95px;
+  }
+}
+@media  (max-width : 768px) {
+   .nav_search{
+        display: none;
+    }
+   .nav_menu{
+    width : 200%;
+   }
+
+   .sous-categorie_img{
+    width: 90px;
+  }
+}
